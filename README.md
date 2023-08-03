@@ -27,6 +27,7 @@ Knowledge in this repository has been obtained through the courtesy of the amazi
   - [Electronic Speed Controller (ESC)]()
   - [Motor]()
   - [Batteries]()
+  - [Auxiliaries]()
 - [Software]()
   - [Simulator]()
   - [Flight Control Firmware]()
