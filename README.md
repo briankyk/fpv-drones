@@ -7,33 +7,32 @@ The term "**fpv drone**" in this repository refers to the type of remote control
 
 Knowledge in this repository has been obtained through the courtesy of the amazing fpv drone community who have been producing tremendous contents to allow me to participate in this facinating hobby.
 
-> **Attention**
+> **Attention**  
 > Drone flying is a serious hobby and safety is of paramount importance when operating any UAVs, any negligence could result in damage to properties, serious injuries or even death. Please respect good airmanship and follow local regulations of the country in which you operate your UAVs.
 
 ## Table of Contents
 
-- [Getting Started]()
+- [Getting Started](./tech-notes/GETTING_STARTED.mdGETTING_STARTED.md)
 - [Multirotor Model Aircrafts]()
-- [Setup and Configuration]()
-- [Pilot Equipment]()
-  - [Radio Controller]()
-    - [Radio Transmitter]()
+- [Setup and Configuration](./tech-notes/SETUP_CONF.md)
+- [Pilot Equipment](./tech-notes/PILOT_EQPT.md)
+  - [Radio Controller and Radio Transmitter]()
   - [FPV Goggles]()
-- [Drone Hardware]()
-  - [FPV Camera and Video Transmitter (VTX)]()
+- [Drone Hardware](./tech-notes/DRONE_HARDWARE.md)
   - [Airframe]()
+  - [FPV Camera and Video Transmitter (VTX)]()
   - [Flight Controller (FC)]()
   - [Radio Receiver]()
   - [Electronic Speed Controller (ESC)]()
   - [Motor]()
   - [Batteries]()
   - [Auxiliaries]()
-- [Software]()
+- [Software](./tech-notes/SOFTWARE.md)
   - [Simulator]()
   - [Flight Control Firmware]()
   - [Radio Controller Firmware]()
-- [Tools and Materials]()
-- [Flying Techniques]()
+- [Tools and Materials](./tech-notes/TOOLS_MATL.md)
+- [Flying Techniques](./tech-notes/TECHNIQUES.md)
   - [Basic Controls]()
   - [Air Tricks]()
-- [Extras]()
+- [Extras](./tech-notes/EXTRAS.md)
