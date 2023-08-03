@@ -13,7 +13,7 @@ Knowledge in this repository has been obtained through the courtesy of the amazi
 ## Table of Contents
 
 - [Getting Started](./tech-notes/GETTING_STARTED.mdGETTING_STARTED.md)
-- [Multirotor Model Aircrafts]()
+- [Multirotor Model Aircrafts](./tech-notes/MULTIROTOR.md)
 - [Setup and Configuration](./tech-notes/SETUP_CONF.md)
 - [Pilot Equipment](./tech-notes/PILOT_EQPT.md)
   - [Radio Controller and Radio Transmitter]()
