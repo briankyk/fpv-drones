@@ -1,0 +1,1 @@
+Place EdgeTX config here.
