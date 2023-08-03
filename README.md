@@ -1,9 +1,9 @@
-First-Person-View (FPV) Drone
-=============================
+First-Person-View (FPV) Drones
+==============================
 
 This repository serves to store my fpv drones settings and my drone related technical notes.
 
-The term "**fpv drone**" in this repository refers to the type of remote controlled multirotor model aircrafts that are equipped with camera which live stream camera feed to a set of goggles worn by the pilot, creating an immersive experience as if the pilot is located in the cockpit.
+The term "**fpv drones**" in this repository refers to the type of remote controlled multirotor model aircrafts that are equipped with camera which live stream camera feed to a set of goggles worn by the pilot, creating an immersive experience as if the pilot is located in the cockpit.
 
 Knowledge in this repository has been obtained through the courtesy of the amazing fpv drone community who have been producing tremendous contents to allow me to participate in this facinating hobby.
 
