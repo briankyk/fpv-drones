@@ -36,3 +36,7 @@ Knowledge in this repository has been obtained through the courtesy of the amazi
   - [Basic Controls]()
   - [Air Tricks]()
 - [Extras](./tech-notes/EXTRAS.md)
+
+## Side Notes
+It is gut-wrenching to see fpv drones being used in bombing missions during the currently on-going Russian invasion of Ukraine, and I hope this tragedy will end in Ukrainian victory as soon as possible so we can fully enjoy our beloved hobby in peace once again. 
+
