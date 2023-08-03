@@ -37,6 +37,8 @@ Knowledge in this repository has been obtained through the courtesy of the amazi
   - [Air Tricks]()
 - [Extras](./tech-notes/EXTRAS.md)
 
-## Side Notes
-It is gut-wrenching to see fpv drones being used in bombing missions during the currently on-going Russian invasion of Ukraine, and I hope this tragedy will end in Ukrainian victory as soon as possible so we can fully enjoy our beloved hobby in peace once again. 
-
+## Stand with Ukraine
+[![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)  
+In solidarity with the people of Ukraine. I hope this tragedy will end in Ukrainian victory as soon as possible, so we can fully enjoy our beloved hobby in peace together once again. Слава Україні!
+ 
+Donate to [United24](https://u24.gov.ua/) to support the war effort in Ukraine.
