@@ -20,4 +20,4 @@ In addition, **safety** is the most important aspect of this hobby, therefore pl
 12. Build my next drone (soon).
 13. Keep flying and enjoy the experience.
 
-There are many good articles and videos which you can find online, or just reach out the community and you will get all the help you need. Have fun!
+There are many good articles and videos which you can find online, or just reach out to the community and you will get all the help you need. Have fun!
