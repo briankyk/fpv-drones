@@ -1,6 +1,6 @@
 # Getting Started
 
-FPV drones are incredibly fun to fly, however unlike typical consumer drones like those produced by DJI and Parrot, the learning curve is quite steep and it takes substantial effort to not only learn how to fly, but also how to maintain your equipment. Having some background knowledge in physics, mechanical engineering and electronics will certainly help make the learing process a lot easier.
+FPV drones are incredibly fun to fly, however unlike typical consumer drones like those produced by DJI and Parrot, the learning curve is quite steep and it takes substantial effort to not only learn how to fly, but also how to maintain your equipment. Having some background knowledge in physics, mechanical engineering and electronics will certainly help make the learning process a lot easier.
   
 In addition, **safety** is the most important aspect of this hobby, therefore please also spend time to study the local UAV regulations and safety guidelines of the country in which you will operate your drones in. Since I operate in Canada mainly, [here](https://tc.canada.ca/en/aviation/drone-safety) are the regulations that I need to follow.  
 
