@@ -1,0 +1,103 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.3.0 Apr 25 2022 / 01:06:24 (9d71184) MSP API: 1.44
+# config: manufacturer_id: GEPR, board_name: GEPRCF722_BT_HD, version: f39511f0, date: 2022-04-24T01:30:02Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name GEPRCF722_BT_HD
+manufacturer_id GEPR
+mcu_id 001f00234232500c20343639
+signature 
+
+# name: MARK5
+
+# feature
+feature -TELEMETRY
+feature -ESC_SENSOR
+feature GPS
+feature AIRMODE
+
+# serial
+serial 1 0 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
+serial 4 2 115200 115200 0 115200
+
+# aux
+aux 0 0 0 900 1300 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 13 2 1700 2100 0 0
+
+# rxfail
+rxfail 7 s 1900
+
+# master
+set gyro_to_use = FIRST
+set acc_calibration = 9,-2,33,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set blackbox_sample_rate = 1/16
+set dshot_bidir = OFF
+set failsafe_delay = 10
+set small_angle = 180
+set gps_provider = UBLOX
+set gps_sbas_mode = AUTO
+set gps_set_home_point_once = ON
+set gps_rescue_min_sats = 6
+set gps_rescue_allow_arming_without_fix = ON
+set osd_vbat_pos = 2401
+set osd_rssi_pos = 2360
+set osd_link_quality_pos = 2392
+set osd_tim_2_pos = 375
+set osd_flymode_pos = 56
+set osd_vtx_channel_pos = 34
+set osd_current_pos = 2369
+set osd_craft_name_pos = 2412
+set osd_gps_speed_pos = 2209
+set osd_gps_sats_pos = 2145
+set osd_home_dir_pos = 2305
+set osd_home_dist_pos = 2241
+set osd_flight_dist_pos = 2273
+set osd_altitude_pos = 2177
+set osd_avg_cell_voltage_pos = 2424
+set osd_displayport_device = MSP
+set displayport_msp_serial = 0
+set pinio_config = 129,1,1,1
+set pinio_box = 0,40,41,42
+set name = MARK5
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
