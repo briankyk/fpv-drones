@@ -16,6 +16,8 @@ manufacturer_id GEPR
 mcu_id 002200204241501320373136
 signature 
 
+# name: CB30-U1
+
 # resources
 resource MOTOR 1 C07
 resource MOTOR 2 C06
@@ -26,12 +28,17 @@ resource PINIO 2 C12
 
 # feature
 feature -SOFTSERIAL
+feature -TELEMETRY
 feature -AIRMODE
+feature INFLIGHT_ACC_CAL
 
 # serial
-serial 0 1 115200 57600 0 115200
+serial 0 131073 115200 57600 0 115200
 serial 3 0 115200 57600 0 115200
 serial 4 0 115200 57600 0 115200
+
+# beeper
+beeper -ON_USB
 
 # beacon
 beacon RX_SET
@@ -49,6 +56,9 @@ aux 8 40 7 1300 1700 0 0
 aux 9 49 4 1700 2100 0 0
 aux 10 52 6 1700 2100 0 0
 
+# adjrange
+adjrange 0 0 6 900 2100 29 6 0 0
+
 # vtxtable
 vtxtable bands 6
 vtxtable channels 8
@@ -65,34 +75,62 @@ vtxtable powerlabels 25 100 200 400 600
 # master
 set dyn_notch_count = 1
 set dyn_notch_q = 500
-set acc_trim_pitch = 2
-set acc_trim_roll = 1
-set acc_calibration = 85,20,-32,1
-set baro_hardware = NONE
-set fpv_mix_degrees = 25
+set acc_calibration = -72,-13,3,1
 set blackbox_sample_rate = 1/16
 set dshot_bidir = ON
+set failsafe_delay = 35
+set failsafe_off_delay = 65
+set failsafe_throttle = 1450
 set align_board_roll = 180
 set align_board_yaw = 0
 set vbat_max_cell_voltage = 435
-set beeper_dshot_beacon_tone = 3
+set beeper_dshot_beacon_tone = 5
 set yaw_motors_reversed = ON
 set small_angle = 180
-set osd_vbat_pos = 2412
-set osd_link_quality_pos = 2103
-set osd_rssi_dbm_pos = 2136
-set osd_tim_2_pos = 2092
-set osd_flymode_pos = 2433
-set osd_throttle_pos = 2433
+set osd_warn_bitmask = 8189
+set osd_rssi_alarm = 100
+set osd_cap_alarm = 616
+set osd_alt_alarm = 0
+set osd_vbat_pos = 1542
+set osd_link_quality_pos = 14787
+set osd_link_tx_power_pos = 14851
+set osd_rssi_dbm_pos = 14819
+set osd_tim_1_pos = 512
+set osd_tim_2_pos = 14871
+set osd_flymode_pos = 6499
+set osd_g_force_pos = 7470
+set osd_throttle_pos = 5475
 set osd_vtx_channel_pos = 404
-set osd_current_pos = 2443
-set osd_mah_drawn_pos = 395
-set osd_craft_name_pos = 2442
-set osd_warnings_pos = 2377
-set osd_canvas_width = 30
-set osd_canvas_height = 13
+set osd_crosshairs_pos = 6489
+set osd_ah_sbar_pos = 4442
+set osd_ah_pos = 4314
+set osd_current_pos = 15851
+set osd_mah_drawn_pos = 15885
+set osd_craft_name_pos = 6144
+set osd_pilot_name_pos = 6176
+set osd_compass_bar_pos = 4278
+set osd_pidrate_profile_pos = 7407
+set osd_warnings_pos = 14659
+set osd_avg_cell_voltage_pos = 15820
+set osd_pit_ang_pos = 5411
+set osd_rol_ang_pos = 5443
+set osd_disarmed_pos = 14627
+set osd_rtc_date_time_pos = 48
+set osd_adjustment_range_pos = 2112
+set osd_flip_arrow_pos = 14618
+set osd_core_temp_pos = 7532
+set osd_stick_overlay_left_pos = 4524
+set osd_stick_overlay_right_pos = 5537
+set osd_rate_profile_name_pos = 7372
+set osd_pid_profile_name_pos = 7341
+set osd_sys_vtx_temp_pos = 1070
+set osd_stat_bitmask = 10516268
+set osd_displayport_device = MSP
+set vcd_video_system = HD
 set pinio_config = 129,1,1,1
 set pinio_box = 39,40,41,42
+set craft_name = CB30-U1
+set pilot_name = MSB
 
 profile 0
 

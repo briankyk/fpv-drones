@@ -11,7 +11,7 @@ batch start
 board_name GEPRC_F722_AIO
 manufacturer_id GEPR
 
-# name: -
+# name: CB30-U1
 
 # resources
 resource BEEPER 1 C15
@@ -205,15 +205,15 @@ feature -AIRMODE
 feature -RX_SPI
 feature -ESC_SENSOR
 feature -ANTI_GRAVITY
+feature INFLIGHT_ACC_CAL
 feature RX_SERIAL
-feature TELEMETRY
 feature LED_STRIP
 feature OSD
 feature ANTI_GRAVITY
 
 # serial
 serial 20 1 115200 57600 0 115200
-serial 0 1 115200 57600 0 115200
+serial 0 131073 115200 57600 0 115200
 serial 1 64 115200 57600 0 115200
 serial 2 0 115200 57600 0 115200
 serial 3 0 115200 57600 0 115200
@@ -244,7 +244,7 @@ beeper MULTI_BEEPS
 beeper DISARM_REPEAT
 beeper ARMED
 beeper SYSTEM_INIT
-beeper ON_USB
+beeper -ON_USB
 beeper BLACKBOX_ERASE
 beeper CRASH_FLIP
 beeper CAM_CONNECTION_OPEN
@@ -383,7 +383,7 @@ aux 18 0 0 900 900 0 0
 aux 19 0 0 900 900 0 0
 
 # adjrange
-adjrange 0 0 0 900 900 0 0 0 0
+adjrange 0 0 6 900 2100 29 6 0 0
 adjrange 1 0 0 900 900 0 0 0 0
 adjrange 2 0 0 900 900 0 0 0 0
 adjrange 3 0 0 900 900 0 0 0 0
@@ -492,14 +492,14 @@ set gyro_lpf1_dyn_expo = 5
 set gyro_filter_debug_axis = ROLL
 set acc_hardware = AUTO
 set acc_lpf_hz = 25
-set acc_trim_pitch = 2
-set acc_trim_roll = 1
-set acc_calibration = 85,20,-32,1
+set acc_trim_pitch = 0
+set acc_trim_roll = 0
+set acc_calibration = -72,-13,3,1
 set baro_bustype = I2C
 set baro_spi_device = 0
 set baro_i2c_device = 2
 set baro_i2c_address = 0
-set baro_hardware = NONE
+set baro_hardware = AUTO
 set mid_rc = 1500
 set min_check = 1050
 set max_check = 1900
@@ -517,7 +517,7 @@ set rc_smoothing_setpoint_cutoff = 0
 set rc_smoothing_feedforward_cutoff = 0
 set rc_smoothing_throttle_cutoff = 0
 set rc_smoothing_debug_axis = ROLL
-set fpv_mix_degrees = 25
+set fpv_mix_degrees = 0
 set max_aux_channels = 14
 set serialrx_provider = CRSF
 set serialrx_inverted = OFF
@@ -564,9 +564,9 @@ set motor_poles = 14
 set motor_output_reordering = 0,1,2,3,4,5,6,7
 set thr_corr_value = 0
 set thr_corr_angle = 800
-set failsafe_delay = 15
-set failsafe_off_delay = 10
-set failsafe_throttle = 1000
+set failsafe_delay = 35
+set failsafe_off_delay = 65
+set failsafe_throttle = 1450
 set failsafe_switch_mode = STAGE1
 set failsafe_throttle_low_delay = 100
 set failsafe_procedure = DROP
@@ -604,7 +604,7 @@ set ibatv_offset = 0
 set beeper_inversion = ON
 set beeper_od = OFF
 set beeper_frequency = 0
-set beeper_dshot_beacon_tone = 3
+set beeper_dshot_beacon_tone = 5
 set yaw_motors_reversed = ON
 set mixer_type = LEGACY
 set crashflip_motor_percent = 0
@@ -705,13 +705,13 @@ set ledstrip_beacon_percent = 50
 set ledstrip_beacon_armed_only = OFF
 set ledstrip_brightness = 100
 set osd_units = METRIC
-set osd_warn_bitmask = 8191
-set osd_rssi_alarm = 20
+set osd_warn_bitmask = 8189
+set osd_rssi_alarm = 100
 set osd_link_quality_alarm = 80
 set osd_rssi_dbm_alarm = -60
 set osd_rsnr_alarm = 4
-set osd_cap_alarm = 2200
-set osd_alt_alarm = 100
+set osd_cap_alarm = 616
+set osd_alt_alarm = 0
 set osd_distance_alarm = 0
 set osd_esc_temp_alarm = 0
 set osd_esc_rpm_alarm = -1
@@ -724,29 +724,29 @@ set osd_logo_on_arming = OFF
 set osd_logo_on_arming_duration = 5
 set osd_tim1 = 2560
 set osd_tim2 = 2561
-set osd_vbat_pos = 2412
+set osd_vbat_pos = 1542
 set osd_rssi_pos = 234
-set osd_link_quality_pos = 2103
-set osd_link_tx_power_pos = 234
-set osd_rssi_dbm_pos = 2136
+set osd_link_quality_pos = 14787
+set osd_link_tx_power_pos = 14851
+set osd_rssi_dbm_pos = 14819
 set osd_rsnr_pos = 234
-set osd_tim_1_pos = 234
-set osd_tim_2_pos = 2092
+set osd_tim_1_pos = 512
+set osd_tim_2_pos = 14871
 set osd_remaining_time_estimate_pos = 234
-set osd_flymode_pos = 2433
+set osd_flymode_pos = 6499
 set osd_anti_gravity_pos = 234
-set osd_g_force_pos = 234
-set osd_throttle_pos = 2433
+set osd_g_force_pos = 7470
+set osd_throttle_pos = 5475
 set osd_vtx_channel_pos = 404
-set osd_crosshairs_pos = 205
-set osd_ah_sbar_pos = 206
-set osd_ah_pos = 78
-set osd_current_pos = 2443
-set osd_mah_drawn_pos = 395
+set osd_crosshairs_pos = 6489
+set osd_ah_sbar_pos = 4442
+set osd_ah_pos = 4314
+set osd_current_pos = 15851
+set osd_mah_drawn_pos = 15885
 set osd_wh_drawn_pos = 234
 set osd_motor_diag_pos = 234
-set osd_craft_name_pos = 2442
-set osd_pilot_name_pos = 234
+set osd_craft_name_pos = 6144
+set osd_pilot_name_pos = 6176
 set osd_gps_speed_pos = 234
 set osd_gps_lon_pos = 234
 set osd_gps_lat_pos = 234
@@ -754,36 +754,36 @@ set osd_gps_sats_pos = 234
 set osd_home_dir_pos = 234
 set osd_home_dist_pos = 234
 set osd_flight_dist_pos = 234
-set osd_compass_bar_pos = 234
+set osd_compass_bar_pos = 4278
 set osd_altitude_pos = 234
 set osd_pid_roll_pos = 234
 set osd_pid_pitch_pos = 234
 set osd_pid_yaw_pos = 234
 set osd_debug_pos = 234
 set osd_power_pos = 234
-set osd_pidrate_profile_pos = 234
-set osd_warnings_pos = 2377
-set osd_avg_cell_voltage_pos = 234
-set osd_pit_ang_pos = 234
-set osd_rol_ang_pos = 234
+set osd_pidrate_profile_pos = 7407
+set osd_warnings_pos = 14659
+set osd_avg_cell_voltage_pos = 15820
+set osd_pit_ang_pos = 5411
+set osd_rol_ang_pos = 5443
 set osd_battery_usage_pos = 234
-set osd_disarmed_pos = 234
+set osd_disarmed_pos = 14627
 set osd_nheading_pos = 234
 set osd_up_down_reference_pos = 205
 set osd_ready_mode_pos = 234
 set osd_esc_tmp_pos = 234
 set osd_esc_rpm_pos = 234
 set osd_esc_rpm_freq_pos = 234
-set osd_rtc_date_time_pos = 234
-set osd_adjustment_range_pos = 234
-set osd_flip_arrow_pos = 234
-set osd_core_temp_pos = 234
+set osd_rtc_date_time_pos = 48
+set osd_adjustment_range_pos = 2112
+set osd_flip_arrow_pos = 14618
+set osd_core_temp_pos = 7532
 set osd_log_status_pos = 234
-set osd_stick_overlay_left_pos = 234
-set osd_stick_overlay_right_pos = 234
+set osd_stick_overlay_left_pos = 4524
+set osd_stick_overlay_right_pos = 5537
 set osd_stick_overlay_radio_mode = 2
-set osd_rate_profile_name_pos = 234
-set osd_pid_profile_name_pos = 234
+set osd_rate_profile_name_pos = 7372
+set osd_pid_profile_name_pos = 7341
 set osd_profile_name_pos = 234
 set osd_rcchannels_pos = 234
 set osd_camera_frame_pos = 35
@@ -799,15 +799,15 @@ set osd_sys_lq_pos = 234
 set osd_sys_goggle_dvr_pos = 234
 set osd_sys_vtx_dvr_pos = 234
 set osd_sys_warnings_pos = 234
-set osd_sys_vtx_temp_pos = 234
+set osd_sys_vtx_temp_pos = 1070
 set osd_sys_fan_speed_pos = 234
-set osd_stat_bitmask = 14124
+set osd_stat_bitmask = 10516268
 set osd_profile = 1
 set osd_profile_1_name = -
 set osd_profile_2_name = -
 set osd_profile_3_name = -
 set osd_gps_sats_show_hdop = OFF
-set osd_displayport_device = AUTO
+set osd_displayport_device = MSP
 set osd_rcchannels = -1,-1,-1,-1
 set osd_camera_frame_width = 24
 set osd_camera_frame_height = 11
@@ -817,8 +817,8 @@ set osd_menu_background = TRANSPARENT
 set osd_aux_channel = 1
 set osd_aux_scale = 200
 set osd_aux_symbol = 65
-set osd_canvas_width = 30
-set osd_canvas_height = 13
+set osd_canvas_width = 53
+set osd_canvas_height = 20
 set osd_craftname_msgs = OFF
 set task_statistics = ON
 set debug_mode = NONE
@@ -834,7 +834,7 @@ set vtx_softserial_alt = OFF
 set vtx_freq = 0
 set vtx_pit_mode_freq = 0
 set vtx_halfduplex = ON
-set vcd_video_system = AUTO
+set vcd_video_system = HD
 set vcd_h_offset = 0
 set vcd_v_offset = 0
 set max7456_clock = NOMINAL
@@ -897,8 +897,8 @@ set stats_min_armed_time_s = -1
 set stats_total_flights = 0
 set stats_total_time_s = 0
 set stats_total_dist_m = 0
-set craft_name = -
-set pilot_name = -
+set craft_name = CB30-U1
+set pilot_name = MSB
 set altitude_source = DEFAULT
 set altitude_prefer_baro = 100
 set altitude_lpf = 300
