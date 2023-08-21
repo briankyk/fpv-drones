@@ -5,7 +5,7 @@ This repository serves to store my fpv drones settings and my drone related tech
 
 The term "**fpv drones**" in this repository refers to the type of remote controlled multirotor model aircrafts that are equipped with camera which live stream camera feed to a set of goggles worn by the pilot, creating an immersive experience as if the pilot is located in the cockpit.
 
-Knowledge in this repository has been obtained through the courtesy of the amazing fpv drone community who have been producing tremendous contents to allow me to participate in this facinating hobby.
+Knowledge in this repository has been obtained through the courtesy of the amazing fpv drone community who have been producing tremendous contents to allow me to participate in this fascinating hobby.
 
 > **Attention**  
 > Drone flying is a serious hobby and safety is of paramount importance when operating any UAVs, any negligence could result in damage to properties, serious injuries or even death. Please respect good airmanship and follow local regulations of the country in which you operate your UAVs.
@@ -14,7 +14,6 @@ Knowledge in this repository has been obtained through the courtesy of the amazi
 
 - [Getting Started](./tech-notes/GETTING_STARTED.md)
 - [Multirotor Model Aircrafts](./tech-notes/MULTIROTOR.md)
-- [Setup and Configuration](./tech-notes/SETUP_CONF.md)
 - [Pilot Equipment](./tech-notes/PILOT_EQPT.md)
   - [Radio Controller and Radio Transmitter](./tech-notes/PILOT_EQPT.md#radio-controller-and-radio-transmitter)
   - [FPV Goggles](./tech-notes/PILOT_EQPT.md#fpv-goggles)
@@ -23,15 +22,16 @@ Knowledge in this repository has been obtained through the courtesy of the amazi
   - [FPV Camera and Video Transmitter (VTX)](./tech-notes/DRONE_HARDWARE.md#fpv-camera-and-video-transmitter-vtx)
   - [Flight Controller (FC)](./tech-notes/DRONE_HARDWARE.md#flight-controller-fc)
   - [Radio Receiver](./tech-notes/DRONE_HARDWARE.md#radio-receiver)
-  - [Electronic Speed Controller (ESC)](./tech-notes/DRONE_HARDWARE.md#)
-  - [Motor](./tech-notes/DRONE_HARDWARE.md)
-  - [Batteries]()
-  - [Auxiliaries]()
+  - [Electronic Speed Controller (ESC)](./tech-notes/DRONE_HARDWARE.md#electronic-speed-controller-esc)
+  - [Motor and Propeller](./tech-notes/DRONE_HARDWARE.md#motor-and-propeller)
+  - [Batteries](./tech-notes/DRONE_HARDWARE.md#batteries)
+  - [Auxiliaries](./tech-notes/DRONE_HARDWARE.md#auxiliaries)
 - [Software](./tech-notes/SOFTWARE.md)
   - [Simulator]()
   - [Flight Control Firmware]()
   - [Radio Controller Firmware]()
 - [Tools and Materials](./tech-notes/TOOLS_MATL.md)
+- [Setup and Configuration](./tech-notes/SETUP_CONF.md)
 - [Flying Techniques](./tech-notes/TECHNIQUES.md)
   - [Basic Controls]()
   - [Air Tricks]()
