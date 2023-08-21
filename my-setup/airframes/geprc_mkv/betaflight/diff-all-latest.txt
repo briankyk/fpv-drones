@@ -1,0 +1,109 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.4.2 Jun  1 2023 / 06:28:28 (23d066d08) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name GEPRCF722_BT_HD
+manufacturer_id GEPR
+mcu_id 001f00234232500c20343639
+signature 
+
+# name: MK5-U1
+
+# feature
+feature -ESC_SENSOR
+feature GPS
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 0 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
+serial 4 2 115200 115200 0 115200
+
+# beeper
+beeper -ON_USB
+
+# aux
+aux 1 1 1 900 1300 0 0
+aux 2 2 1 1300 1700 0 0
+aux 3 27 5 1700 2100 0 0
+aux 4 46 5 1700 2100 0 0
+aux 5 28 7 900 1700 1 0
+aux 6 28 1 1700 2100 0 0
+aux 7 35 2 1700 2100 0 0
+aux 8 40 4 1700 2100 0 0
+aux 9 49 4 1700 2100 0 0
+
+# adjrange
+adjrange 0 0 6 900 2100 29 6 0 0
+
+# master
+set gyro_to_use = FIRST
+set acc_calibration = 76,-16,4,1
+set osd_link_quality_pos = 14787
+set osd_link_tx_power_pos = 14851
+set osd_rssi_dbm_pos = 14819
+set osd_tim_2_pos = 14871
+set osd_g_force_pos = 7471
+set osd_throttle_pos = 5475
+set osd_crosshairs_pos = 6489
+set osd_ah_sbar_pos = 4442
+set osd_ah_pos = 4314
+set osd_current_pos = 15851
+set osd_mah_drawn_pos = 15885
+set osd_craft_name_pos = 6144
+set osd_pilot_name_pos = 6176
+set osd_gps_sats_pos = 6336
+set osd_home_dir_pos = 4186
+set osd_home_dist_pos = 4153
+set osd_compass_bar_pos = 6326
+set osd_pidrate_profile_pos = 7408
+set osd_warnings_pos = 14691
+set osd_avg_cell_voltage_pos = 15820
+set osd_pit_ang_pos = 5411
+set osd_rol_ang_pos = 5443
+set osd_disarmed_pos = 14723
+set osd_adjustment_range_pos = 2144
+set osd_rate_profile_name_pos = 7373
+set osd_pid_profile_name_pos = 7342
+set osd_profile = 2
+set osd_displayport_device = MSP
+set vcd_video_system = HD
+set craft_name = MK5-U1
+set pilot_name = MSB
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
